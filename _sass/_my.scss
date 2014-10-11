@@ -1,238 +1,140 @@
 /*
  * Globals
  */
-
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #444;
-}
 
+a, a:focus, a:hover {
+    color: #444;
+}
 .clickable {
-  text-decoration: underline;
-  cursor: pointer;
+    text-decoration: underline;
+    cursor: pointer;
 }
-
 /*
  * Base structure
  */
 
-html,
-body {
-  font-family: $base-font-family;
-  min-height: 100%;
-  font-weight: 400;
-  color: #444;
-
+html, body {
+    font-family: $base-font-family;
+    min-height: 100%;
+    font-weight: 400;
+    color: #444;
 }
-
 /* Extra markup and styles for table-esque vertical and horizontal centering */
+
 .site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
+    display: table;
+    width: 100%;
+    height: 100%;
+    /* For at least Firefox */
+
+    min-height: 100%;
 }
 .site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
+    display: table-cell;
+    vertical-align: top;
 }
 .cover-container {
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 /* Padding for spacing */
-.inner {
-  padding: 15px;
-}
 
+.inner {
+    padding: 15px;
+}
 /*
  * Header
  */
-.masthead-brand {
-  font-family: 'Poiret One', cursive;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
 
-.masthead-nav > li {
-  display: inline-block;
+.navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-size: 32px;
 }
-.masthead-nav > li + li {
-  margin-left: 20px;
+.icon-bar {
+    color: black;
+    border-color: black;
+    background-color: black;
 }
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  border-bottom: 2px solid transparent;
+.navbar-nav> li > a {
+    border-bottom: solid 2px transparent;
 }
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
+.navbar-nav> li > a:hover {
+    background-color: transparent;
+    border-bottom: solid 2px #bbb;
 }
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  border-bottom-color: gray;
-}
-
 @media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
+    .navbar-brand {
+        float: left;
+    }
+    .navbar-nav {
+        float: right;
+    }
 }
-
 /*
  * Cover
  */
 
 .cover {
-  padding: 0 20px;
+    padding: 20px;
 }
-
+.content {
+    .category {
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 5px;
+        color: #c3ced2;
+        letter-spacing: 1px;
+    }
+}
 /*
- * Categories & Projects
+ * Media queries & bootstrap overrides
  */
 
-.category {
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 5px;
-  color: #c3ced2;
-  letter-spacing: 1px;
+@include media-query($tablets) {
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+
+    .cover-container {
+        width: 100%;
+        /* Must be percentage or pixels for horizontal alignment */
+    }
 }
 
-.project {
-    height:115px;
-    width: 100%;
-    display: block;
-    position: relative;
-    margin-bottom: 10px;
-    margin-right: 20px;
-}
-.project .project-wrapper {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-left: solid 2px #777;
-}
-.project .project-title {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: block;
-}
-.project .project-title h4 {
-    text-transform: uppercase;
-}
-.project .project-detail {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #eee;
-    border-left: solid 2px transparent;
-    padding: 10px;
-}
-.project .project-detail a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    letter-spacing: -1px;
+@include media-query($desktops) {
+    .cover-container {
+        width: 800px;
+    }
 }
 
-/*
-* Without CSS3
-*/
-
-.project.scroll {
-    overflow: hidden;
+@include media-query($large-desktops) {
+    .container {
+        width: 970px;
+    }
 }
 
-/*
-* CSS3 Flip
-*/
+// @media (min-width: 768px) {
+//     /* Start the vertical centering */
 
-.project.flip {
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -ms-perspective: 800px;
-    -o-perspective: 800px;
-    perspective: 800px;
-}
-.project.flip .project-wrapper {
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -ms-transition: -moz-transform 1s;
-    -o-transition: -moz-transform 1s;
-    transition: -moz-transform 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.project.flip .project-detail {
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-}
-.project.flip .project-title, .project.flip .project-detail {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.project.flip .flipIt {
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-}
+//     .site-wrapper-inner {
+//         vertical-align: middle;
+//     }
+//     /* Handle the widths */
 
-
-/*
- * Footer
- */
-
-.mastfoot {
-  text-align: center;
-}
-
-.mastfoot a {
-  text-decoration: none;
-}
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .cover-container {
-    width: 700px;
-  }
-}
+//     .cover-container {
+//         width: 100%;
+//         /* Must be percentage or pixels for horizontal alignment */
+//     }
+// }
+// @media (min-width: 992px) {
+//     .cover-container {
+//         width: 800px;
+//     }
+// }
+// @media (min-width: 1200px) {
+//     .container {
+//         width: 970px;
+//     }
+// }

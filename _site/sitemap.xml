@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- posts -->
+  
+    <url>
+      <loc>http://clementmouchet.github.io/jekyll/howto/2014/10/11/working-with-jekyll.html</loc>
+    </url>
+  
+    <url>
+      <loc>http://clementmouchet.github.io/jekyll/update/2014/10/10/welcome-to-jekyll.html</loc>
+    </url>
+  
+  <!-- pages -->
+  
+    
+    <url>
+      <loc>http://clementmouchet.github.io/blog/</loc>
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://clementmouchet.github.io/</loc>
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://clementmouchet.github.io/publications_and_awards/</loc>
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://clementmouchet.github.io/work/</loc>
+    </url>
+    
+  
+</urlset>

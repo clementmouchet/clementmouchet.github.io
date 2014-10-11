@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Clément Mouchet - Clément Mouchet</title>
-    <meta name="description" content="">
+    <meta name="description" content="Open Source Musings">
 
     <link rel="canonical" href="http://clementmouchet.github.io/">
 
     <meta property="og:title" content="Clément Mouchet" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Open Source Musings" />
     <meta property="og:site_name" content="Clément Mouchet" />
     <meta property="og:url" content="http://clementmouchet.github.io/" />
     <meta property="og:image" content="//secure.gravatar.com/avatar/0797b13e2da0ab973e811729833d255f" />
@@ -50,47 +50,54 @@
 
     <div class="site-wrapper">
   <div class="site-wrapper-inner">
-    <div class="cover-container">
-      <div class="masthead clearfix">
-        <div class="inner">
-          <h1 class="masthead-brand">
-            Clément Mouchet
-          </h1>
-          <ul class="nav masthead-nav">
-              <li><a class="page-link" href="/">Home</a></li>
-            
+    <div class="container">
+      <div class="inner">
+        <div class="masthead clearfix">
+          <div class="navbar" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://clementmouchet.github.io">Clément Mouchet</a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li><a class="page-link" href="/">Home</a></li>
               
-                <li><a class="page-link" href="/blog/">Blog</a></li>
+                
+                  <li><a class="page-link" href="/blog/">Blog</a></li>
+                
               
-          
+                
               
-          
+                
               
-          
+                
               
-          
+                
+                  <li><a class="page-link" href="/publications_and_awards/">Publications & Awards</a></li>
+                
               
-                <li><a class="page-link" href="/open_source/">Open Source</a></li>
+                
               
-          
+                
+                  <li><a class="page-link" href="/work/">Work</a></li>
+                
               
-                <li><a class="page-link" href="/publications_and_awards/">Publications & Awards</a></li>
-              
-          
-              
-                <li><a class="page-link" href="/work/">Work</a></li>
-              
-          
-          </ul>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="inner cover">
+      <div class="cover-container inner cover">
 
 
     <div class="page-content">
       <div class="wrapper">
-              <div class="row">
-        <div class="col-md-6">
+              <div class="row content">
+        <div class="col-sm-6">
           <section>
             <h2 class="category">Who am I?</h2>
             <p>I'm an Open Source developer interested in</p>
@@ -100,17 +107,29 @@
                 #Sustainable Development
               </small>
             </h2>
+            <p>
+              I design and build serious solutions and fun things.
+            </p>
           </section>
           <br>
           <section>
-            <h2 class="category">Blog</h2>
+            <h2 class="category">Latest Posts</h2>
             <ul class="post-list">
               
                 <li>
-                  <span class="post-meta">Oct 11, 2014</span>
+                  <span class="post-meta">11 October 2014</span>
                   <h2>
-                    <a class="post-link" href="/jekyll/update/2014/10/11/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+                    <a class="post-link" href="/jekyll/howto/2014/10/11/working-with-jekyll.html">Working with Jekyll</a>
                   </h2>
+                  <p class="text-muted">A few thoughts about static CMS</p>
+                </li>
+              
+                <li>
+                  <span class="post-meta">10 October 2014</span>
+                  <h2>
+                    <a class="post-link" href="/jekyll/update/2014/10/10/welcome-to-jekyll.html">Say Hi to Jekyll!</a>
+                  </h2>
+                  <p class="text-muted">...and welcome to my new website</p>
                 </li>
               
             </ul>
@@ -119,6 +138,28 @@
           <br>
           <nav class="nav">
             <ul class="nav">
+              <li>
+                <a href="https://twitter.com/c_mouchet"
+                    target="_blank"
+                    title="Find me on Twitter @c_mouchet"
+                    data-toggle="tooltip"
+                    data-placement="left">
+                  <span class="octicon octicon-comment-discussion"></span>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="http://www.feedly.com/home#subscription/feed/http://clementmouchet.github.io/feed.xml"
+                    target="_blank"
+                    title="News delivered to your feedly"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    data-feedid="feed/http://clementmouchet.github.io/feed.xml"
+                    data-uri="subscription/feed/http://clementmouchet.github.io/feed.xml">
+                  <span class="octicon octicon-cloud-upload"></span>
+                  Feedly
+                </a>
+              </li>
               <li>
                 <a href="https://github.com/clementmouchet"
                     target="_blank"
@@ -140,13 +181,13 @@
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/c_mouchet"
+                <a href="http://clementmouchet.github.io/feed.xml"
                     target="_blank"
-                    title="Follow me on Twitter @c_mouchet"
+                    title="Subscripte to the RSS feed"
                     data-toggle="tooltip"
                     data-placement="left">
-                  <span class="octicon octicon-comment-discussion"></span>
-                  Twitter
+                  <span class="octicon octicon-rss"></span>
+                  RSS feed
                 </a>
               </li>
               <li>
@@ -162,7 +203,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-5 col-sm-offset-1">
           <h2 class="category">Work</h2>
           <ul class="nav">
             <li class="project scroll">

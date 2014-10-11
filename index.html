@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: cover
 ---
 
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row content">
+        <div class="col-sm-6">
           <section>
             <h2 class="category">Who am I?</h2>
             <p>I'm an Open Source developer interested in</p>
@@ -13,17 +13,21 @@ layout: default
                 #Sustainable Development
               </small>
             </h2>
+            <p>
+              I design and build serious solutions and fun things.
+            </p>
           </section>
           <br>
           <section>
-            <h2 class="category">Blog</h2>
+            <h2 class="category">Latest Posts</h2>
             <ul class="post-list">
               {% for post in paginator.posts %}
                 <li>
-                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  <span class="post-meta">{{ post.date | date: "%-d %B %Y" }}</span>
                   <h2>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                   </h2>
+                  {% if post.excerpt %}<p class="text-muted">{{ post.excerpt }}</p>{% endif %}
                 </li>
               {% endfor %}
             </ul>
@@ -32,6 +36,28 @@ layout: default
           <br>
           <nav class="nav">
             <ul class="nav">
+              <li>
+                <a href="https://twitter.com/c_mouchet"
+                    target="_blank"
+                    title="Find me on Twitter @c_mouchet"
+                    data-toggle="tooltip"
+                    data-placement="left">
+                  <span class="octicon octicon-comment-discussion"></span>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="http://www.feedly.com/home#subscription/feed/{{ "/feed.xml" | prepend: site.url }}"
+                    target="_blank"
+                    title="News delivered to your feedly"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    data-feedid="feed/{{ "/feed.xml" | prepend: site.url }}"
+                    data-uri="subscription/feed/{{ "/feed.xml" | prepend: site.url }}">
+                  <span class="octicon octicon-cloud-upload"></span>
+                  Feedly
+                </a>
+              </li>
               <li>
                 <a href="https://github.com/clementmouchet"
                     target="_blank"
@@ -53,13 +79,13 @@ layout: default
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/c_mouchet"
+                <a href="{{ "/feed.xml" | prepend: site.url }}"
                     target="_blank"
-                    title="Follow me on Twitter @c_mouchet"
+                    title="Subscripte to the RSS feed"
                     data-toggle="tooltip"
                     data-placement="left">
-                  <span class="octicon octicon-comment-discussion"></span>
-                  Twitter
+                  <span class="octicon octicon-rss"></span>
+                  RSS feed
                 </a>
               </li>
               <li>
@@ -75,7 +101,7 @@ layout: default
             </ul>
           </nav>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-5 col-sm-offset-1">
           <h2 class="category">Work</h2>
           <ul class="nav">
             <li class="project scroll">

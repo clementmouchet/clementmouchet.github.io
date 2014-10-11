@@ -1,13 +1,17 @@
 # Site settings
-title: "Clément Mouchet"
-email: "clement.mouchet@gmail.com"
-description: "Open Source Musings"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://clementmouchet.github.io" # the base hostname & protocol for your site
+title:            "Clément Mouchet"
+email:            "clement.mouchet@gmail.com"
+description:      "Open Source Musings"
+baseurl:          "" # the subpath of your site, e.g. /blog/
+url:              "http://clementmouchet.github.io" # the base hostname & protocol for your site
 twitter_username: "c_mouchet"
-github_username: "clementmouchet"
+github_username:  "clementmouchet"
 
 # Build settings
-markdown: "kramdown"
+markdown:         "kramdown"
+markdown_ext:     markdown,mkd,mkdn,md
+lsi:              false
+highlighter:      true
+exclude:          ["script", "vendor", "readme.md", "scss"]
 
 paginate: 3

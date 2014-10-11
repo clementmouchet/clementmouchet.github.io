@@ -1,0 +1,36 @@
+.post-categories {
+  margin: 0; padding: 0;
+  list-style: none;
+
+  li {
+    text-transform: capitalize;
+    display: inline-block;
+
+    > a {
+      background-color: rgba(#eee, .4);
+      padding: 0 8px;
+      display: inline-block;
+      margin: 0 2px 8px;
+      font-weight: 300; }
+
+    &:hover { opacity: .75; }
+  }
+}
+
+.post-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  small {
+    font-weight: 200;
+  }
+}
+.post-meta {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.post-link {
+  text-transform: uppercase;
+  font-weight: 300;
+}

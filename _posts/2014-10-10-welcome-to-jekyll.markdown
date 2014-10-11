@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-10-10 23:51:24
+title:  "Say Hi to Jekyll!"
+date:   2014-10-10 12:00:00
 categories: jekyll update
+excerpt: "...and welcome to my new website"
 ---
 
 Say hi to http://clementmouchet.github.io
