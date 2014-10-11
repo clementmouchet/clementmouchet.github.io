@@ -1,7 +1,7 @@
 # Site settings
 title: "Clément Mouchet"
 email: "clement.mouchet@gmail.com"
-description:"Open Source Musings"
+description: "Open Source Musings"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://clementmouchet.github.io" # the base hostname & protocol for your site
 twitter_username: "c_mouchet"
