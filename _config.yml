@@ -1,15 +1,13 @@
 # Site settings
-title: Clément Mouchet
-email: clement.mouchet@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-Open Source Musings
+title: "Clément Mouchet"
+email: "clement.mouchet@gmail.com"
+description:"Open Source Musings"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://clementmouchet.github.io" # the base hostname & protocol for your site
-twitter_username: c_mouchet
-github_username:  clementmouchet
+twitter_username: "c_mouchet"
+github_username: "clementmouchet"
 
 # Build settings
-markdown: kramdown
+markdown: "kramdown"
 
 paginate: 3
-paginate_path: "blog"
