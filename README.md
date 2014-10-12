@@ -1,4 +1,4 @@
-clementmouchet.github.io
+clementmouchet.github.io {![Build Status](https://travis-ci.org/clementmouchet/clementmouchet.github.io.svg?branch=master)}
 ========================
 
 About this repo
