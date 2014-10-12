@@ -27,7 +27,7 @@ layout: cover
                   <h2>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                   </h2>
-                  {% if post.excerpt %}<p class="text-muted">{{ post.excerpt }}</p>{% endif %}
+                  {% if post.intro %}<p class="text-muted">{{ post.intro }}</p>{% endif %}
                 </li>
               {% endfor %}
             </ul>

@@ -3,7 +3,7 @@ layout: post
 title:  "Say Hi to Jekyll!"
 date:   2014-10-10 12:00:00
 categories: jekyll update
-excerpt: "...and welcome to my new website"
+intro: "...and welcome to my new website"
 ---
 
 Say hi to http://clementmouchet.github.io
@@ -12,7 +12,7 @@ I've just created this website/blog using [Jekyll][jekyll], [JQuery][JQuery] & [
 
 [Jekyll][jekyll] is really simple, and easy to manage, no databses, just markdown pages, like the one you're reading now, see below:
 
-{% highlight Cheetah %}
+{% highlight YAML %}
 ---
 layout: post
 title:  "Welcome to Jekyll!"
