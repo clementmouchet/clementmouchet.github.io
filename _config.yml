@@ -1,7 +1,9 @@
 # Site settings
 title:            "Clément Mouchet"
 email:            "clement.mouchet@gmail.com"
-description:      "Open Source Musings"
+description:      >
+                  I'm an Open Source developer interested in People, Digital, Open Knowledge, Open Source, Open Data & Sustainable Development.
+                  I design and build serious solutions and fun things.
 baseurl:          "" # the subpath of your site, e.g. /blog/
 url:              "http://clementmouchet.com" # the base hostname & protocol for your site
 twitter_username: "c_mouchet"
