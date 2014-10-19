@@ -3,7 +3,7 @@ clementmouchet.github.io {![Build Status](https://travis-ci.org/clementmouchet/c
 
 About this repo
 -------------------
-This is a tatic website and blog built on top of [Jekyll](http://jekyllrb.com), using [jQuery](http://jquery.com), [Bootstrap](http://getbootstrap.com), HTML5 & CSS3.
+This is a static website and blog built on top of [Jekyll](http://jekyllrb.com), using [jQuery](http://jquery.com), [Bootstrap](http://getbootstrap.com), HTML5 & CSS3.
 
 Installation
 -------------------
