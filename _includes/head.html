@@ -7,13 +7,23 @@
     <meta name="description" content="{{ site.description }}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ "/feed.xml" | prepend: site.url }}">
+
 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:site_name" content="Clément Mouchet" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:image" content="//secure.gravatar.com/avatar/0797b13e2da0ab973e811729833d255f" />
+    <meta property="og:image" content="https//secure.gravatar.com/avatar/0797b13e2da0ab973e811729833d255f" />
     <meta name="msvalidate.01" content="B6E2D29C91F9FCBE7EE5BC72D8ED9C5F" />
+    <meta name="keywords" itemprop="keywords" content="People, Digital, Open Knowledge, Open Source, Open Data, Development, Sustainable Development,">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@c_mouchet">
+    <meta name="twitter:creator" content="@https://twitter.com/c_mouchet">
+    <meta name="twitter:domain" content="{{ site.url }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta itemprop="image" content="https//secure.gravatar.com/avatar/0797b13e2da0ab973e811729833d255f">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
