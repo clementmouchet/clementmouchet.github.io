@@ -10,10 +10,8 @@ twitter_username: "c_mouchet"
 github_username:  "clementmouchet"
 
 # Build settings
-markdown:         "kramdown"
+markdown:         kramdown
 markdown_ext:     markdown,mkd,mkdn,md
-lsi:              false
-highlighter:      true
 exclude:          ["script", "vendor", "readme.md", "scss"]
 
 paginate: 3

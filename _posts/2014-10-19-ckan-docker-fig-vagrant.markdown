@@ -59,7 +59,7 @@ Managing containers can be tedious, especially when you're developing them. Ther
 
 But when I'm working with a custom Docker container I have to type (or copy & paste) 4 commands to build them, 4 commands to run them... and just as many to stop the containers
 
-{% highlight bash linenos %}
+{% highlight bash %}
 
 #  build the containers locally
 docker build --tag="clementmouchet/postgres" .
@@ -100,7 +100,7 @@ This is a bit tedious, and that's why I looked at [Fig](http://www.fig.sh)
 
 so the 8+ commands above are reduced to 1: `fig up` thanks to the definition below:
 
-{% highlight YAML linenos %}
+{% highlight YAML %}
 
 postgres:
   build: ../postgresql
