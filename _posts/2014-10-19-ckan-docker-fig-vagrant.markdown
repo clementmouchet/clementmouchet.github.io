@@ -138,9 +138,9 @@ And fig can simplify the rest of the docker commands you want to run, to view lo
 
 Now you may wonder why do you need/want Vagrant? The whole point about Docker is that containers are not VMs, and Fig has reduced the complexity of managing containers, why would you want to bring virtualisation back in the picture?
 
-Well the answer is simple: portability. I have a personal Mac, a work PC, and Linux servers... Docker will work on all those operating systems; natively on Linux and through proxy a VM on OS X & Windows: [Boot2docker](http://boot2docker.io). I love this project, it's fast, lightweight & simple to use, but it doesn't support volumes & shared folders, and it's not really representing your production host.
+Well the answer is simple: portability. I have a personal Mac, a work PC, and Linux servers... Docker will work on all those operating systems; natively on Linux and through proxy a VM on OS X & Windows: [Boot2docker](http://boot2docker.io). I love this project, it's fast, lightweight & simple to use, but it doesn't support volumes & shared folders on Windows yet ([Boot2docker 1.3 offers partial support on Mac OS X](https://blog.docker.com/2014/10/docker-1-3-signed-images-process-injection-security-options-mac-shared-directories/)), and it's not really representing your production host.
 
-That's why Vagrant is useful, and I was really excited to see [support for Docker added in Vagrant 1.6](https://www.vagrantup.com/blog/feature-preview-vagrant-1-6-docker-dev-environments.html)
+That's why I think Vagrant is useful, and I was really excited to see [support for Docker added in Vagrant 1.6](https://www.vagrantup.com/blog/feature-preview-vagrant-1-6-docker-dev-environments.html)
 
 My goal was you make sure than any development environment would represent production and behave exactly the same. This also helps portability of the environment, since a simple command: `vagrant up --provider=docker --no-parallel` will create Linux hosts running Docker if required (OSX & Windows), build & run boot all the containers in order & mount the source directory on your machine as a volume inside the container.
 
