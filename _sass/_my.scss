@@ -64,7 +64,7 @@ html, body {
     background-color: transparent;
     border-bottom: solid 2px #bbb;
 }
-@media (min-width: 768px) {
+@include media-query($tablets) {
     .navbar-brand {
         float: left;
     }
@@ -72,6 +72,7 @@ html, body {
         float: right;
     }
 }
+
 /*
  * Cover
  */
@@ -96,11 +97,8 @@ html, body {
     .site-wrapper-inner {
         vertical-align: middle;
     }
-    /* Handle the widths */
-
     .cover-container {
         width: 100%;
-        /* Must be percentage or pixels for horizontal alignment */
     }
 }
 
@@ -115,27 +113,3 @@ html, body {
         width: 970px;
     }
 }
-
-// @media (min-width: 768px) {
-//     /* Start the vertical centering */
-
-//     .site-wrapper-inner {
-//         vertical-align: middle;
-//     }
-//     /* Handle the widths */
-
-//     .cover-container {
-//         width: 100%;
-//         /* Must be percentage or pixels for horizontal alignment */
-//     }
-// }
-// @media (min-width: 992px) {
-//     .cover-container {
-//         width: 800px;
-//     }
-// }
-// @media (min-width: 1200px) {
-//     .container {
-//         width: 970px;
-//     }
-// }
