@@ -44,11 +44,15 @@ The default names &amp; passwords can easily be overridden with environment vari
 Building containers is easy, caching is powerful. But you need to cheat sometimes, especially with the `ADD` command.
 In the Solr container for instance, I quickly realised that the following command:
 
+{% highlight Dockerfile %}
 	ADD https://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/$SOLR.tgz
+{% endhighlight %}
 
 is not cached, whereas
 
+{% highlight Dockerfile %}
 	RUN wget --progress=bar:force https://archive.apache.org/dist/lucene/solr/$SOLR_VERSION/$SOLR.tgz
+{% endhighlight %}
 
 is.
 
